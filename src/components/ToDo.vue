@@ -166,9 +166,9 @@ export default {
       border-radius: 50%;
       height: 3rem;
       width: 3rem;
+      cursor: pointer;
       display: flex;
       align-items: center;
-      cursor: pointer;
       justify-content: center;
 
       h4 {
