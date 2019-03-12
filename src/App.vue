@@ -59,7 +59,7 @@ body, html {
   border: 1px solid #CCC;
   border-radius: 3vh;
   box-shadow: 0 2rem 4rem rgba(black, 0.1);
-  padding: 2rem 0;
+  padding: 0.5rem 0 0;
 
   @media screen and (max-width: 412px) {
     height: 95%;
@@ -83,6 +83,9 @@ p {
 }
 
 button {
+  color: #5F7A93;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   &:focus {
     outline: none;

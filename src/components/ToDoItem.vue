@@ -65,6 +65,7 @@ li.to-do-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
 
     svg {
       pointer-events: none;

@@ -24,9 +24,9 @@
         </transition>
       </button>
 
-      <button class="add-todo-button" @click="addItem(newTodo)">
+      <div class="add-todo-button" @click="addItem(newTodo)">
         <h4>+</h4>
-      </button>
+      </div>
     </div>
   </div>
 </template>
@@ -79,26 +79,28 @@ export default {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 6rem;
-    margin: 6rem 0;
+    margin: 8rem 0 6rem;
     background: linear-gradient(#D56CB1, #9B6BE6);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 410px) {
+      margin: 5rem 0 3rem;
+    }
   }
 
   ul {
     overflow-y: scroll;
-    margin-bottom: 2rem;
   }
 
   .add-todo {
     padding: 2rem 0 0;
-    margin: 0 3rem;
+    margin: 0 3rem 2rem;
     border-top: 1px solid #D7E8FC;
     display: grid;
     grid-template-columns: 1fr auto auto;
     grid-gap: 1rem;
     height: 5rem;
-    max-width: 100%;
 
     input {
       border-radius: 1rem;
@@ -121,7 +123,7 @@ export default {
     button.set-prio {
       border: none;
       border-radius: 1rem;
-      width: 8rem;
+      width: 9rem;
       box-shadow: 0 0 0.2rem 0.1rem #CDE0FA;
       text-transform: uppercase;
       padding: 0 1rem;
@@ -158,21 +160,19 @@ export default {
       }
     }
 
-    button.add-todo-button {
+    .add-todo-button {
       background: linear-gradient(to bottom right, #71A9FE, #6797FF);
       color: #FFF;
       border-radius: 50%;
-      border: none;
       height: 3rem;
       width: 3rem;
       display: flex;
       align-items: center;
+      cursor: pointer;
       justify-content: center;
 
       h4 {
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 3rem;
+        font-size: 3rem;
       }
     }
   }
