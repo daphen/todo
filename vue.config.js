@@ -3,6 +3,7 @@ module.exports = {
   pwa: {
     name: 'Todo',
     themeColor: "#F78E88",
+    backgroundColor: "#F78E88",
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black'
   }
