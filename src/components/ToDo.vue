@@ -5,7 +5,7 @@
         <h1 class="to-do-header">Activities</h1>
       </transition>
       <transition-group name="stagger" :style="{ '--total': todos.length }">
-        <ToDoItem v-for="(todo, key) in todos" :key="key + todo" :todo="todo" :style="{ '--i': key }" />
+        <ToDoItem v-for="(todo, key) in todos" :key="`todo-${key}`" :todo="todo" :style="{ '--i': key }" />
       </transition-group>
     </ul>
 
